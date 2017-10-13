@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>emails entered</title>
+    </head>
+        <body>
+            <h1>Email Addresses Entered:</h1>
+            <table>
+                {% for x in emails: %}
+                <tr>
+                    <td>{{x['emails']}}</td>
+                    <td>{{x['created_at']}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </body>
+</html>
